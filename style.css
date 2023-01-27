@@ -1,0 +1,76 @@
+/* Style the products */
+.head{
+    color:brown 
+      }
+  .body{
+    
+  }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .product {
+    width: 33%;
+    text-align: center;
+  }
+  .product img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  .product h3 {
+    margin: 10px 0;
+  }
+  .product p {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .product button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  /* Style the shopping cart */
+  .shopping-cart {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  .shopping-cart h3 {
+    margin: 0;
+  }
+  .shopping-cart .cart-items {
+    margin-bottom: 10px;
+  }
+  .shopping-cart .cart-item {
+    margin: 10px 0;
+    /* For screens that are 600px wide or smaller */
+  @media only screen and (max-width: 600px) {
+    /* Add styles for small screens here */
+    /* For example, you can make the navigation menu appear as a dropdown menu */
+    .nav {
+      display: none;
+    }
+    .nav-dropdown {
+      display: block;
+    }
+  }
+  
+  /* For screens that are 601px wide or larger */
+  @media only screen and (min-width: 601px) {
+    /* Add styles for larger screens here */
+    /* For example, you can make the navigation menu appear as a horizontal menu */
+    .nav {
+      display: block;
+    }
+    .nav-dropdown {
+      display: none;
+    }
+  }
+  
+  
